@@ -1,0 +1,230 @@
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 0 20px;
+
+}
+header.header-nav .logo{
+    width: 150px;
+    margin-left: 20px;
+}
+header.header-nav .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+header.header-nav .navbar ul{
+    display: flex;
+    justify-content:center ;
+    gap: 4rem 1rem;
+}
+header.header-nav .navbar ul li a{
+    color: black;
+    padding: 15px;
+    border-radius: 50px;
+}
+header.header-nav button.btn{
+    background-color:#756BEE ;
+    border-radius: 50px;
+    color: azure;
+    border: none;
+    height: 40px;
+    width: 100px;
+    margin-left: auto;
+}
+header.header-nav .navbar li:hover a{
+    background-color:blueviolet;
+    color: white;
+}
+header.header-nav button.btn:hover{
+    background-color: brown;
+    color: azure;
+}
+
+
+
+main.main-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+main.main-content .banner-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 100%;
+}
+main.main-content .banner-1 .judul-1 h1{
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 0%;
+}
+main.main-content .banner-1 .judul-1 h1 span{
+    color: #756BEE;
+}
+main.main-content .banner-1 .judul-1 .button-judul{
+    width: 178px;
+    height: 58px;
+    background-color: #756BEE;
+    color: aliceblue;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+main.main-content .banner-1 .judul-1 .button-judul:hover{
+    background-color: brown;
+}
+.banner-2 .conten-2 .judul-2 {
+    margin: 50px;
+}
+.banner-2 .conten-2 .judul-2 h3, .judul-logo{
+    text-align: center;
+    
+}
+.banner-2 .conten-2 .judul-2 .judul-logo img{
+    padding: 30px;
+}
+.banner-2 .conten-2 .isi-konten-2 {
+    display: flex;
+    justify-content: center;
+}
+.banner-2 .conten-2 .isi-konten-2 .teks-konten-2 h1{
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+.banner-2 .conten-2 .isi-konten-2 .teks-konten-2 p{
+    line-height: 1.5;
+}
+.banner-2 .conten-2 .isi-konten-2 .teks-konten-2 .btn-konten-2{
+    width: 178px;
+    height: 58px;
+    background-color: #756BEE;
+    color: aliceblue;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.banner-3{
+    background-color: antiquewhite;
+}
+
+.banner-3 .konten-3 .judul-3{
+    text-align: center;
+    padding: 60px;
+    
+}
+.banner-3 .konten-3 .judul-3 h1{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.banner-3 .konten-3 .card-testimoni {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.banner-3 .konten-3 .card-testimoni .card{
+    width: 416px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+}
+.banner-3 .konten-3 .card-testimoni .card img{
+    width: 68px;
+    height: 68px;
+    margin-right: 10px;
+}
+.banner-3 .konten-3 .card-testimoni .card p {
+    font-size: 15px;
+}
+.banner-3 .konten-3 .card-testimoni .card p .testimoni{
+    font-weight: bold;
+    margin-top: 60px;
+}
+.banner-3 .konten-3 .card-testimoni .card p .nama-testimoni{
+    color: #756BEE;
+}
+.footer-konten{
+    background-color: black;
+    color: white;
+}
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-main .footer-logo img{
+    width: 60px;
+}
+
+.footer-main .copy {
+    font-size: 20px;
+}
+
+.footer-main .footer-logo img:hover{
+    background-color: #756BEE;
+}
+
+
+
+
+
+
+@media screen and (max-width: 868px) {
+    .logo{
+        margin-top: 15px;
+    }
+    header.header-nav{
+        flex-direction: column;
+    }
+    .navbar{
+        gap: 1px;
+    }
+    header.header-nav button.btn{
+       margin: 15px auto;
+
+    }
+    .banner-1{
+        flex-direction: column;
+        margin-left: 4px;
+    }
+    .isi-konten-2{
+        flex-direction: column;
+        margin: auto;
+    }
+    .banner-3 .konten-3 .card-testimoni{
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .banner-3 .konten-3 .card-testimoni .card{
+        margin-top: 30px;
+    }
+}
